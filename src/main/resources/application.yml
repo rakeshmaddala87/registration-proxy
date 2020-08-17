@@ -9,3 +9,14 @@ management:
   endpoint:
     health:
       enabled: true
+
+kafka:
+  bootstrap:
+    servers: localhost:9092
+  batch:
+    maxbytes: 5242880
+  consumer:
+    group: registration-request-consumer
+  topic:
+    name: registration-request-topic
+

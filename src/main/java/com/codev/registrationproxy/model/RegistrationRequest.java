@@ -2,12 +2,15 @@ package com.codev.registrationproxy.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 @Data
 @Builder(builderClassName = "Builder", toBuilder = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonDeserialize(builder = RegistrationRequest.Builder.class)
+@ToString
 public class RegistrationRequest {
 
     @JsonProperty(value = "userName")
@@ -21,5 +24,4 @@ public class RegistrationRequest {
     @JsonProperty(value = "password")
     @ApiModelProperty(example = "Rakesh_Bangalore_123$", position = 3)
     private String password;
-
 }
