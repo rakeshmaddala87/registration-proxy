@@ -1,0 +1,11 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /api/registration-proxy
+
+management:
+  endpoints:
+    enable-by-default: false
+  endpoint:
+    health:
+      enabled: true

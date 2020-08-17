@@ -1,0 +1,13 @@
+package com.codev.registrationproxy;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class RegistrationProxyApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
