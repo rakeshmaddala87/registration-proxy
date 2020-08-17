@@ -17,6 +17,8 @@
  "status": "UP"
  }
  
-# check API documention (in-progress)
+# check API documention
+From browser access http://localhost:8085/api/registration-proxy/swagger-ui.html
+
 
  

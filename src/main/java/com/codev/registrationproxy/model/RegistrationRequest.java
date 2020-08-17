@@ -1,6 +1,8 @@
 package com.codev.registrationproxy.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
 @Data
@@ -8,8 +10,16 @@ import lombok.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RegistrationRequest {
 
+    @JsonProperty(value = "userName")
+    @ApiModelProperty(example = "rakesh.venus", position = 1)
     private String userName;
-    private String emailId;
+
+    @JsonProperty(value = "userEmail")
+    @ApiModelProperty(example = "rakesh.venus@gmail.com", position = 2)
+    private String userEmail;
+
+    @JsonProperty(value = "password")
+    @ApiModelProperty(example = "Rakesh_Bangalore_123$", position = 3)
     private String password;
 
 }
