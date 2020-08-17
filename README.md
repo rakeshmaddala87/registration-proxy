@@ -1,5 +1,6 @@
 # 1. Tools/Software needed:
   Software: Maven, Java 8 , Git ,Docker
+  
   Tools : Kafka Tool , IntelliJ 2020 , PostMan
   
 # 2. Setting up the entire infrastructure
